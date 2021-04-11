@@ -1,0 +1,106 @@
+<template>
+  <div id="app">
+    <div class="row">
+      <div class="col">
+        <Header/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <Character/>
+      </div>
+      <div class="col">
+        <Traits/>
+      </div>
+      <div class="col">
+        <Perks/>
+      </div>
+    </div>
+    <div>
+      <b-tabs content-class="mt-3" fill>
+        <b-tab title="Specialities">
+          <Specialities/>
+        </b-tab>
+        <b-tab title="Encounters">
+          <Encounters/>
+        </b-tab>
+        <b-tab title="Items">
+          <Items/>
+          <PrologueItems/>
+        </b-tab>
+        <b-tab title="Locations">
+          <Locations/>
+        </b-tab>
+        <b-tab title="Field Notes">
+          <FieldNotes/>
+        </b-tab>
+        <b-tab title="About">
+          <About/>
+          <Reset />
+        </b-tab>
+      </b-tabs>
+    </div>
+  </div>
+</template>
+
+<script>
+import Reset from './components/Reset.vue';
+import Header from './components/Header.vue'
+import Character from './components/Character.vue'
+import Perks from './components/Perks.vue'
+import Specialities from './components/Specialities.vue'
+import Traits from './components/Traits.vue'
+import Encounters from './components/Encounters.vue'
+import Items from './components/Items.vue'
+import PrologueItems from './components/PrologueItems.vue'
+import Locations from './components/Locations.vue'
+import FieldNotes from "./components/FieldNotes";
+import About from "./components/About.vue";
+
+export default {
+  name: 'App',
+  components: {
+    About,
+    FieldNotes,
+    Reset,
+    Header,
+    Character,
+    Perks,
+    Specialities,
+    Traits,
+    Encounters,
+    Items,
+    Locations,
+    PrologueItems
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+.section{
+  padding: 0 40px;
+}
+
+h3, table {
+  margin: 40px auto;
+}
+
+.add, .remove {
+  padding: 10px;
+  user-select: none;
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
+</style>
