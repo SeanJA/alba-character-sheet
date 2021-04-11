@@ -25,7 +25,7 @@
           <label for="pageNumber">Page Number:</label>
         </th>
         <td>
-          <input id="pageNumber" type="text" v-model="pageNumber" @input="updatePageNumber()">
+          <input id="pageNumber" type="number" min="0" max="3000" v-model="pageNumber" @input="updatePageNumber()">
         </td>
       </tr>
     </table>
@@ -72,3 +72,13 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+input, select{
+  width: stretch;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: dashed 2px black;
+}
+</style>
