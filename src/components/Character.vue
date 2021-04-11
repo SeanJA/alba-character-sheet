@@ -1,6 +1,6 @@
 <template>
   <div class="character section">
-    <h3>Character</h3>
+    <h2>Character</h2>
     <table>
       <tr>
         <th>

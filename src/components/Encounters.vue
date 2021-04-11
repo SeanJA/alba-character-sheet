@@ -1,6 +1,6 @@
 <template>
   <div class="encounters section">
-    <h3>Encounters</h3>
+    <h2>Encounters</h2>
     <div class="row">
       <table class="col">
         <Encounter checkboxTitle="The Hermit (E.1)" checkboxKey="e1"/>

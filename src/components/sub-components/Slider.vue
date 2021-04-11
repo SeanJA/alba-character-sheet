@@ -2,9 +2,9 @@
   <tr>
     <th class="text-nowrap">{{ itemTitle }}</th>
     <td class="text-nowrap">
-      <span class="remove" @click="remove()">-</span>
+      <b-icon-dash-circle-fill class="remove" @click="remove()"></b-icon-dash-circle-fill>
       <input type="range" min="0" :max="max" :value="currentValue" disabled="disabled"/>
-      <span class="add" @click="add()">+</span>
+      <b-icon-plus-circle-fill class="add" @click="add()"></b-icon-plus-circle-fill>
     </td>
     <td class="text-nowrap">
       {{ currentValue }} / {{max}}
@@ -52,7 +52,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>

@@ -1,6 +1,6 @@
 <template>
   <div class="perks  section">
-    <h3>Perks</h3>
+    <h2>Perks</h2>
     <table>
       <tr>
         <th>Shower (P.1)</th>

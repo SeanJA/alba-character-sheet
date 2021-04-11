@@ -1,6 +1,6 @@
 <template>
   <div class="items section">
-    <h3>Items</h3>
+    <h2>Items</h2>
     <div class="row">
       <table class="col">
         <Item itemTitle="Morphine (O.1)" max=18 itemKey="o1"/>

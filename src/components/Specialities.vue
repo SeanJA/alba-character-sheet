@@ -1,6 +1,6 @@
 <template>
   <div class="specialities section">
-    <h3>Specialities</h3>
+    <h2>Specialities</h2>
     <table>
       <Specialty checkboxTitle="Engineering (S.1)" checkboxKey="s1" />
       <Specialty checkboxTitle="Old World Language (S.2)" checkboxKey="s2" />

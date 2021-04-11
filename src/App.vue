@@ -36,7 +36,6 @@
         </b-tab>
         <b-tab title="About">
           <About/>
-          <Reset />
         </b-tab>
       </b-tabs>
     </div>
@@ -44,7 +43,6 @@
 </template>
 
 <script>
-import Reset from './components/Reset.vue';
 import Header from './components/Header.vue'
 import Character from './components/Character.vue'
 import Perks from './components/Perks.vue'
@@ -62,7 +60,6 @@ export default {
   components: {
     About,
     FieldNotes,
-    Reset,
     Header,
     Character,
     Perks,
@@ -77,13 +74,26 @@ export default {
 </script>
 
 <style>
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Syne Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+h1{
+  font-family: 'Rock Salt', cursive;
+}
+
+h2,h3,h4,h5,h6{
+  font-family: 'Syne Mono', monospace;
+}
+
+input{
+  font-family: 'Rock Salt', cursive;
 }
 
 .section{
@@ -94,10 +104,22 @@ h3, table {
   margin: 40px auto;
 }
 
+th{
+  text-align: right;
+}
+
 .add, .remove {
-  padding: 10px;
+  margin: 5px 10px;
   user-select: none;
   cursor: pointer;
+}
+
+.add{
+  color: green;
+}
+
+.remove{
+  color: darkred;
 }
 
 label {

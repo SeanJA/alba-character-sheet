@@ -1,6 +1,6 @@
 <template>
   <div class="items section">
-    <h3>Prologue Items</h3>
+    <h2>Prologue Items</h2>
     <div class="row">
       <table class="col">
         <Item itemTitle="Vola's Necklace (0.29)" max=18 itemKey="o29"/>
