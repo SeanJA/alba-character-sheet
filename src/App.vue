@@ -104,10 +104,6 @@ h3, table {
   margin: 40px auto;
 }
 
-th{
-  text-align: right;
-}
-
 .add, .remove {
   margin: 5px 10px;
   user-select: none;
