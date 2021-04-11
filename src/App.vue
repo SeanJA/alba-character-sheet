@@ -17,7 +17,7 @@
       </div>
     </div>
     <div>
-      <b-tabs content-class="mt-3" fill>
+      <b-tabs content-class="mt-3" fill lazy>
         <b-tab title="Specialities">
           <Specialities/>
         </b-tab>
@@ -54,10 +54,13 @@ import PrologueItems from './components/PrologueItems.vue'
 import Locations from './components/Locations.vue'
 import FieldNotes from "./components/FieldNotes";
 import About from "./components/About.vue";
+import {BTabs, BTab} from 'bootstrap-vue/esm/components/tabs'
 
 export default {
   name: 'App',
   components: {
+    BTab,
+    BTabs,
     About,
     FieldNotes,
     Header,

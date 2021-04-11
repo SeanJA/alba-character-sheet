@@ -39,7 +39,7 @@ export default {
 <style scoped>
   .section p,
   .section button {
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
     text-align: left;
   }
 </style>
