@@ -1,6 +1,6 @@
 <template>
   <div class="fieldNotes section">
-    <h2>Field Notes</h2>
+    <h2>Notebook <b-icon-book-fill></b-icon-book-fill></h2>
     <div class="row">
       <table class="col">
         <FieldNote checkboxTitle="Mess Tent (F.1)" checkboxKey="f1"/>

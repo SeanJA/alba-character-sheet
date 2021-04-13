@@ -22,10 +22,10 @@
       </tr>
       <tr>
         <th>
-          <label for="pageNumber">Page Number:</label>
+          <label for="chapter">Chapter:</label>
         </th>
         <td>
-          <input id="pageNumber" type="number" min="0" max="3000" v-model="pageNumber" @input="updatePageNumber()">
+          <input id="chapter" type="text" v-model="chapter" @input="updateChapter()">
         </td>
       </tr>
     </table>
@@ -35,11 +35,11 @@
 <script>
 export default {
   name: 'Character',
-  prop: ['name', 'boatName', 'pageNumber'],
+  prop: ['name', 'boatName', 'chapter'],
   data: function () {
     return {
       name: this.name,
-      pageNumber: this.pageNumber,
+      chapter: this.chapter,
       boatName: this.boatName,
       boatNames: [
         {
@@ -57,7 +57,7 @@ export default {
   mounted() {
     this.name = localStorage.getItem("name");
     this.boatName = localStorage.getItem("boatName");
-    this.pageNumber = localStorage.getItem("pageNumber");
+    this.chapter = localStorage.getItem("chapter");
   },
   methods: {
     updateName() {
@@ -66,8 +66,8 @@ export default {
     updateBoatName() {
       localStorage.setItem('boatName', this.boatName);
     },
-    updatePageNumber(){
-      localStorage.setItem('pageNumber', this.pageNumber);
+    updateChapter(){
+      localStorage.setItem('chapter', this.chapter);
     }
   }
 }

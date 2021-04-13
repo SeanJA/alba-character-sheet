@@ -1,6 +1,6 @@
 <template>
   <div class="locations section">
-    <h2>Locations</h2>
+    <h2>Map <b-icon-map-fill></b-icon-map-fill></h2>
     <div class="row">
       <table class="col">
         <Location locationTitle="Base Camp (L.1)" locationKey="l1"/>
@@ -34,6 +34,8 @@
         <Location locationTitle="The Aftermath (L.27)" locationKey="l27"/>
         <Location locationTitle="The Streets (L.28)" locationKey="l28"/>
         <Location locationTitle="The Reunion (L.29)" locationKey="l29"/>
+        <Location locationTitle="The Seaside Farm (LS.1)" locationKey="lS1"/>
+        <Location locationTitle="The Cult (LS.2)" locationKey="lS2"/>
       </table>
     </div>
   </div>

@@ -28,10 +28,10 @@
           <Items/>
           <PrologueItems/>
         </b-tab>
-        <b-tab title="Locations">
+        <b-tab title="Map">
           <Locations/>
         </b-tab>
-        <b-tab title="Field Notes">
+        <b-tab title="Notebook">
           <FieldNotes/>
         </b-tab>
         <b-tab title="About">
@@ -54,7 +54,7 @@ import PrologueItems from './components/PrologueItems.vue'
 import Locations from './components/Locations.vue'
 import FieldNotes from "./components/FieldNotes";
 import About from "./components/About.vue";
-import {BTabs, BTab} from 'bootstrap-vue/esm/components/tabs'
+import {BTabs, BTab} from 'bootstrap-vue/esm/components/tabs';
 
 export default {
   name: 'App',
