@@ -1,6 +1,6 @@
 <template>
   <div class="locations section">
-    <h2>Map <b-icon-map-fill></b-icon-map-fill></h2>
+    <h2>Locations</h2>
     <div class="row">
       <table class="col">
         <Location locationTitle="Base Camp (L.1)" locationKey="l1"/>

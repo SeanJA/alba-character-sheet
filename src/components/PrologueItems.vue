@@ -17,7 +17,7 @@
 import Item from './sub-components/Slider.vue';
 
 export default {
-  name: 'Items',
+  name: 'PrologueItems',
   components: {
     Item
   }

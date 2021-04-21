@@ -36,6 +36,7 @@ export default {
   methods: {
     changed() {
       localStorage.setItem(this.itemKey, this.currentValue + '');
+      this.$emit('change', this.currentValue);
     },
     remove() {
       if (this.currentValue > 0) {

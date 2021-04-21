@@ -33,6 +33,7 @@ export default {
     checked() {
       this.checkedValue = !this.checkedValue;
       localStorage.setItem(this.checkboxKey, this.checkedValue + '');
+      this.$emit('change', this.checkedValue);
     }
   }
 }

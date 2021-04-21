@@ -35,7 +35,7 @@
 import Encounter from "./sub-components/Checkbox.vue";
 
 export default {
-  name: "Specialties",
+  name: "Encounters",
   components: {
     Encounter
   }

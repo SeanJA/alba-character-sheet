@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'Field Note',
+  name: 'FieldNote',
   props: {
     checkboxTitle: String,
     checkboxKey: String
@@ -34,6 +34,7 @@ export default {
     checked() {
       this.checkedValue = !this.checkedValue;
       localStorage.setItem(this.checkboxKey, this.checkedValue + '');
+      this.$emit('change', this.checkedValue);
     }
   }
 }

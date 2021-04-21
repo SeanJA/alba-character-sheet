@@ -28,7 +28,7 @@
           <Items/>
           <PrologueItems/>
         </b-tab>
-        <b-tab title="Map">
+        <b-tab title="Locations">
           <Locations/>
         </b-tab>
         <b-tab title="Notebook">
@@ -54,7 +54,7 @@ import PrologueItems from './components/PrologueItems.vue'
 import Locations from './components/Locations.vue'
 import FieldNotes from "./components/FieldNotes";
 import About from "./components/About.vue";
-import {BTabs, BTab} from 'bootstrap-vue/esm/components/tabs';
+import {BTab, BTabs} from 'bootstrap-vue/esm/components/tabs';
 
 export default {
   name: 'App',
@@ -72,6 +72,10 @@ export default {
     Items,
     Locations,
     PrologueItems
+  },
+  beforeMount() {
+    // field notes is the only one that has functionality that is external to itself
+    FieldNotes.mounted();
   }
 }
 </script>
@@ -87,19 +91,19 @@ export default {
   margin-top: 60px;
 }
 
-h1{
+h1 {
   font-family: 'Rock Salt', cursive;
 }
 
-h2,h3,h4,h5,h6{
+h2, h3, h4, h5, h6 {
   font-family: 'Syne Mono', monospace;
 }
 
-input{
+input {
   font-family: 'Rock Salt', cursive;
 }
 
-.section{
+.section {
   padding: 0 40px;
 }
 
@@ -113,15 +117,49 @@ h3, table {
   cursor: pointer;
 }
 
-.add{
+.add {
   color: green;
 }
 
-.remove{
+.remove {
   color: darkred;
 }
 
 label {
   cursor: pointer;
+}
+
+.redCircle .l18 th span,
+.redCircle .l26 th span,
+.greenCircle .l17 th span,
+.greenCircle .l22 th span {
+  color: black;
+  font-weight: bolder;
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.redCircle .l18 th span,
+.redCircle .l26 th span {
+  background-image: linear-gradient(
+      to right,
+      rgba(229, 95, 95, 0.1),
+      rgba(229, 95, 95, 0.7) 4%,
+      rgba(229, 95, 95, 0.3)
+  );
+}
+
+.greenCircle .l17 th span,
+.greenCircle .l22 th span {
+  background-image: linear-gradient(
+      to right,
+      rgba(96, 200, 0, 0.1),
+      rgba(96, 225, 0, 0.7) 4%,
+      rgba(96, 225, 0, 0.3)
+  );
 }
 </style>

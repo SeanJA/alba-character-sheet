@@ -14,7 +14,7 @@
 import Trait from './sub-components/Slider.vue';
 
 export default {
-  name: 'Items',
+  name: 'Traits',
   components: {
     Trait
   }

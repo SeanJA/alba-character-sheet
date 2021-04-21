@@ -1,6 +1,6 @@
 <template>
   <div class="fieldNotes section">
-    <h2>Notebook <b-icon-book-fill></b-icon-book-fill></h2>
+    <h2>Notebook</h2>
     <div class="row">
       <table class="col">
         <FieldNote checkboxTitle="Mess Tent (F.1)" checkboxKey="f1"/>
@@ -31,6 +31,8 @@
         <FieldNote checkboxTitle="Scavenger Map (F.24)" checkboxKey="f24"/>
         <FieldNote checkboxTitle="Vault Badge (F.25)" checkboxKey="f25"/>
         <FieldNote checkboxTitle="Scavenger’s Artefact (F.26)" checkboxKey="f26"/>
+        <FieldNote checkboxTitle="Red Circle (F.27)" checkboxKey="f27" @change="redCircle()"/> <!-- 18 and 26 -->
+        <FieldNote checkboxTitle="Green Circle (F.28)" checkboxKey="f28" @change="greenCircle()"/> <!-- 17 and 22 -->
         <FieldNote checkboxTitle="Seafood (F.29)" checkboxKey="f29"/>
         <FieldNote checkboxTitle="Incense (F.30)" checkboxKey="f30"/>
       </table>
@@ -42,8 +44,42 @@
 import FieldNote from "./sub-components/FieldNote.vue";
 
 export default {
+  name: "FieldNotes",
   components: {
     FieldNote
+  },
+  mounted() {
+    greenCircle();
+    redCircle();
+  },
+  methods: {
+    redCircle(){
+      redCircle();
+    },
+    greenCircle(){
+      greenCircle();
+    }
   }
 }
+
+let greenCircle = function(){
+  let on = localStorage.getItem("f28") === 'true';
+  let body = document.getElementsByTagName('body')[0];
+  if(on){
+    body.classList.add('greenCircle');
+  } else {
+    body.classList.remove('greenCircle');
+  }
+}
+
+let redCircle = function(){
+  let on = localStorage.getItem("f27") === 'true';
+  let body = document.getElementsByTagName('body')[0];
+  if(on){
+    body.classList.add('redCircle');
+  } else {
+    body.classList.remove('redCircle');
+  }
+}
+
 </script>
