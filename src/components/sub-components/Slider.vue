@@ -1,13 +1,27 @@
 <template>
   <tr>
-    <th class="text-nowrap">{{ itemTitle }}</th>
+    <th class="text-nowrap">
+      {{ itemTitle }}
+    </th>
     <td class="text-nowrap">
-      <b-icon-dash-circle-fill class="remove" @click="remove()"></b-icon-dash-circle-fill>
-      <input type="range" min="0" :max="max" :value="currentValue" disabled="disabled"/>
-      <b-icon-plus-circle-fill class="add" @click="add()"></b-icon-plus-circle-fill>
+      <b-icon-dash-circle-fill
+        class="remove"
+        @click="remove()"
+      />
+      <input
+        type="range"
+        min="0"
+        :max="max"
+        :value="currentValue"
+        disabled="disabled"
+      >
+      <b-icon-plus-circle-fill
+        class="add"
+        @click="add()"
+      />
     </td>
     <td class="text-nowrap">
-      {{ currentValue }} / {{max}}
+      {{ currentValue }} / {{ max }}
     </td>
   </tr>
 </template>
@@ -16,22 +30,32 @@
 export default {
   name: 'Item',
   props: {
-    itemTitle: String,
-    itemKey: String,
-    max: String,
+    itemTitle: {
+      type: String,
+      default: ''
+    },
+    itemKey: {
+      type: String,
+      default: ''
+    },
+    max: {
+      type: String,
+      default: "0"
+    },
   },
   data: function () {
     return {
       currentValue: 0
     }
   },
-  mounted() {
-    this.currentValue = this.value;
-  },
   computed: {
     value() {
-      return parseInt(localStorage.getItem(this.itemKey) ?? 0);
+      let value = parseInt(localStorage.getItem(this.locationKey));
+      return value ? value : 0;
     }
+  },
+  mounted() {
+    this.currentValue = this.value;
   },
   methods: {
     changed() {

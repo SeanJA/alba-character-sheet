@@ -3,10 +3,26 @@
     <h2>Prologue Items</h2>
     <div class="row">
       <table class="col">
-        <Item itemTitle="Vola's Necklace (0.29)" max=18 itemKey="o29"/>
-        <Item itemTitle="Nice Coat (0.30)" max=18 itemKey="o30"/>
-        <Item itemTitle="Pocket Knife (0.31)" max=18 itemKey="o31"/>
-        <Item itemTitle="Nice Rations (0.32)" max=18 itemKey="o32"/>
+        <Item
+          item-title="Vola's Necklace (0.29)"
+          max="18"
+          item-key="o29"
+        />
+        <Item
+          item-title="Nice Coat (0.30)"
+          max="18"
+          item-key="o30"
+        />
+        <Item
+          item-title="Pocket Knife (0.31)"
+          max="18"
+          item-key="o31"
+        />
+        <Item
+          item-title="Nice Rations (0.32)"
+          max="18"
+          item-key="o32"
+        />
       </table>
     </div>
   </div>

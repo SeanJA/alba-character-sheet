@@ -3,29 +3,92 @@
     <h2>Encounters</h2>
     <div class="row">
       <table class="col">
-        <Encounter checkboxTitle="The Hermit (E.1)" checkboxKey="e1"/>
-        <Encounter checkboxTitle="Morag (E.2)" checkboxKey="e2"/>
-        <Encounter checkboxTitle="Naomi the Medic (E.3)" checkboxKey="e3"/>
-        <Encounter checkboxTitle="Charlie the Mechanic (E.4)" checkboxKey="e4"/>
-        <Encounter checkboxTitle="Altercation with Phil (E.5)" checkboxKey="e5"/>
-        <Encounter checkboxTitle="Crucible Tom (E.6)" checkboxKey="e6"/>
-        <Encounter checkboxTitle="Priestly Encounter (E.7)" checkboxKey="e7"/>
-        <Encounter checkboxTitle="Windmill Warden (E.8)" checkboxKey="e8"/>
-        <Encounter checkboxTitle="Gaia (E.9)" checkboxKey="e9"/>
-        <Encounter checkboxTitle="Gaia Seen (E.10)" checkboxKey="e10"/>
-        <Encounter checkboxTitle="Rescue Gaia (E.11)" checkboxKey="e11"/>
+        <Encounter
+          checkbox-title="The Hermit (E.1)"
+          checkbox-key="e1"
+        />
+        <Encounter
+          checkbox-title="Morag (E.2)"
+          checkbox-key="e2"
+        />
+        <Encounter
+          checkbox-title="Naomi the Medic (E.3)"
+          checkbox-key="e3"
+        />
+        <Encounter
+          checkbox-title="Charlie the Mechanic (E.4)"
+          checkbox-key="e4"
+        />
+        <Encounter
+          checkbox-title="Altercation with Phil (E.5)"
+          checkbox-key="e5"
+        />
+        <Encounter
+          checkbox-title="Crucible Tom (E.6)"
+          checkbox-key="e6"
+        />
+        <Encounter
+          checkbox-title="Priestly Encounter (E.7)"
+          checkbox-key="e7"
+        />
+        <Encounter
+          checkbox-title="Windmill Warden (E.8)"
+          checkbox-key="e8"
+        />
+        <Encounter
+          checkbox-title="Gaia (E.9)"
+          checkbox-key="e9"
+        />
+        <Encounter
+          checkbox-title="Gaia Seen (E.10)"
+          checkbox-key="e10"
+        />
+        <Encounter
+          checkbox-title="Rescue Gaia (E.11)"
+          checkbox-key="e11"
+        />
       </table>
       <table class="col">
-        <Encounter checkboxTitle="Gaia in Tow (E.12)" checkboxKey="e12"/>
-        <Encounter checkboxTitle="Knowledge of Hidden Raft (E.13)" checkboxKey="e13"/>
-        <Encounter checkboxTitle="Meet Dagger (E.14)" checkboxKey="e14"/>
-        <Encounter checkboxTitle="Dagger’s Fate (E.15)" checkboxKey="e15"/>
-        <Encounter checkboxTitle="Viktor (E.16)" checkboxKey="e16"/>
-        <Encounter checkboxTitle="Talk with Boy (E.17)" checkboxKey="e17"/>
-        <Encounter checkboxTitle="Ship’s Guards (E.18)" checkboxKey="e18"/>
-        <Encounter checkboxTitle="The Gaoler (E.19)" checkboxKey="e19"/>
-        <Encounter checkboxTitle="Balloon Sabotage (E.20)" checkboxKey="e20"/>
-        <Encounter checkboxTitle="The Balloon (E.21)" checkboxKey="e21"/>
+        <Encounter
+          checkbox-title="Gaia in Tow (E.12)"
+          checkbox-key="e12"
+        />
+        <Encounter
+          checkbox-title="Knowledge of Hidden Raft (E.13)"
+          checkbox-key="e13"
+        />
+        <Encounter
+          checkbox-title="Meet Dagger (E.14)"
+          checkbox-key="e14"
+        />
+        <Encounter
+          checkbox-title="Dagger’s Fate (E.15)"
+          checkbox-key="e15"
+        />
+        <Encounter
+          checkbox-title="Viktor (E.16)"
+          checkbox-key="e16"
+        />
+        <Encounter
+          checkbox-title="Talk with Boy (E.17)"
+          checkbox-key="e17"
+        />
+        <Encounter
+          checkbox-title="Ship’s Guards (E.18)"
+          checkbox-key="e18"
+        />
+        <Encounter
+          checkbox-title="The Gaoler (E.19)"
+          checkbox-key="e19"
+        />
+        <Encounter
+          checkbox-title="Balloon Sabotage (E.20)"
+          checkbox-key="e20"
+        />
+        <Encounter
+          checkbox-title="The Balloon (E.21)"
+          checkbox-key="e21"
+        />
       </table>
     </div>
   </div>

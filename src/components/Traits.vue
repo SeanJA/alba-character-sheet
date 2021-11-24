@@ -2,10 +2,26 @@
   <div class="traits section">
     <h2>Traits</h2>
     <table>
-      <Trait itemTitle="🛡 Resolve" max=24 itemKey="t1" />
-      <Trait itemTitle="❤️ Compassion" max=24 itemKey="t2" />
-      <Trait itemTitle="🌀 Instability" max=24 itemKey="t3" />
-      <Trait itemTitle="💀 Cruelty" max=24 itemKey="t4" />
+      <Trait
+        item-title="🛡 Resolve"
+        max="24"
+        item-key="t1"
+      />
+      <Trait
+        item-title="❤️ Compassion"
+        max="24"
+        item-key="t2"
+      />
+      <Trait
+        item-title="🌀 Instability"
+        max="24"
+        item-key="t3"
+      />
+      <Trait
+        item-title="💀 Cruelty"
+        max="24"
+        item-key="t4"
+      />
     </table>
   </div>
 </template>

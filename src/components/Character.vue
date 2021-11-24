@@ -7,7 +7,12 @@
           <label for="name">Name:</label>
         </th>
         <td>
-          <input id="name" type="text" v-model="name" @input="updateName()">
+          <input
+            id="name"
+            v-model="name"
+            type="text"
+            @input="updateName()"
+          >
         </td>
       </tr>
       <tr>
@@ -15,8 +20,18 @@
           <label for="boatName">Boat Name:</label>
         </th>
         <td>
-          <select id="boatName" v-model="boatName" @change="updateBoatName()">
-            <option v-for="item in boatNames" :value="item.value" :key="item.value">{{ item.value }}</option>
+          <select
+            id="boatName"
+            v-model="boatName"
+            @change="updateBoatName()"
+          >
+            <option
+              v-for="item in boatNames"
+              :key="item.value"
+              :value="item.value"
+            >
+              {{ item.value }}
+            </option>
           </select>
         </td>
       </tr>
@@ -25,7 +40,12 @@
           <label for="chapter">Chapter:</label>
         </th>
         <td>
-          <input id="chapter" type="text" v-model="chapter" @input="updateChapter()">
+          <input
+            id="chapter"
+            v-model="chapter"
+            type="text"
+            @input="updateChapter()"
+          >
         </td>
       </tr>
     </table>
