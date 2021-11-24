@@ -50,7 +50,7 @@ export default {
   },
   computed: {
     value() {
-      let value = parseInt(localStorage.getItem(this.locationKey));
+      let value = parseInt(localStorage.getItem(this.itemKey));
       return value ? value : 0;
     }
   },
