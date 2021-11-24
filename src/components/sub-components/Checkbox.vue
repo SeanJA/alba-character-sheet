@@ -4,7 +4,12 @@
       <label :for="checkboxKey">{{ checkboxTitle }}</label>
     </th>
     <td>
-      <input :id="checkboxKey" type="checkbox" :checked="checkedValue" @change="checked()">
+      <input
+        :id="checkboxKey"
+        type="checkbox"
+        :checked="checkedValue"
+        @change="checked()"
+      >
     </td>
   </tr>
 </template>
@@ -14,7 +19,8 @@ export default {
   name: 'Checkbox',
   props: {
     checkboxTitle: {
-      type: String
+      type: String,
+      default: ''
     },
     checkboxKey: {
       type: String,
