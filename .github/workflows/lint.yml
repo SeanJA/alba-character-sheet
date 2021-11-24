@@ -1,4 +1,4 @@
-name: "another linter"
+name: "linter"
 on:
   # by adding a schedule task to this workflow we will automatically
   # begin serializing read-only runs and handling them. The cron job
