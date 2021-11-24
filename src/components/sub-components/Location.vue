@@ -5,14 +5,25 @@
     </th>
     <td>
       <label>
-        <small>Unlocked</small> <br/>
-        <input class="unlock" type="checkbox" :checked="unlocked" @change="unlockedChecked()"/>
+        <small>Unlocked</small> <br>
+        <input
+          class="unlock"
+          type="checkbox"
+          :checked="unlocked"
+          @change="unlockedChecked()"
+        >
       </label>
     </td>
     <td>
       <label>
-        <small>Completed</small> <br/>
-        <input class="complete" disabled type="checkbox" :checked="completed" @change="completedChecked()"/>
+        <small>Completed</small> <br>
+        <input
+          class="complete"
+          disabled
+          type="checkbox"
+          :checked="completed"
+          @change="completedChecked()"
+        >
       </label>
     </td>
   </tr>
@@ -22,8 +33,14 @@
 export default {
   name: 'Location',
   props: {
-    locationTitle: String,
-    locationKey: String
+    locationTitle: {
+      type: String,
+      default: ''
+    },
+    locationKey: {
+      type: String,
+      default: ''
+    }
   },
   data: function () {
     return {
@@ -31,15 +48,10 @@ export default {
       completed: false
     }
   },
-  mounted() {
-    this.unlocked = this.unlockedValue;
-    this.completed = this.completedValue;
-    crossOut(this.locationKey);
-    toggleCompleted(this.unlocked, this.locationKey);
-  },
   computed: {
     value() {
-      return parseInt(localStorage.getItem(this.locationKey) ?? 0);
+      let value = parseInt(localStorage.getItem(this.locationKey));
+      return value ? value : 0;
     },
     unlockedValue() {
       return localStorage.getItem(this.locationKey + '_unlocked') === 'true';
@@ -47,6 +59,12 @@ export default {
     completedValue() {
       return localStorage.getItem(this.locationKey + '_completed') === 'true';
     }
+  },
+  mounted() {
+    this.unlocked = this.unlockedValue;
+    this.completed = this.completedValue;
+    crossOut(this.locationKey);
+    toggleCompleted(this.unlocked, this.locationKey);
   },
   methods: {
     completedChecked() {

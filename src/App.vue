@@ -2,40 +2,44 @@
   <div id="app">
     <div class="row">
       <div class="col">
-        <Header/>
+        <Header />
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <Character/>
+        <Character />
       </div>
       <div class="col">
-        <Traits/>
+        <Traits />
       </div>
       <div class="col">
-        <Perks/>
+        <Perks />
       </div>
     </div>
     <div>
-      <b-tabs content-class="mt-3" fill lazy>
+      <b-tabs
+        content-class="mt-3"
+        fill
+        lazy
+      >
         <b-tab title="Specialities">
-          <Specialities/>
+          <Specialities />
         </b-tab>
         <b-tab title="Encounters">
-          <Encounters/>
+          <Encounters />
         </b-tab>
         <b-tab title="Items">
-          <Items/>
-          <PrologueItems/>
+          <Items />
+          <PrologueItems />
         </b-tab>
         <b-tab title="Locations">
-          <Locations/>
+          <Locations />
         </b-tab>
         <b-tab title="Notebook">
-          <FieldNotes/>
+          <FieldNotes />
         </b-tab>
         <b-tab title="About">
-          <About/>
+          <About />
         </b-tab>
       </b-tabs>
     </div>

@@ -3,36 +3,72 @@
     <h2>Perks</h2>
     <table>
       <tr>
-        <th class="shower">Shower (P.1)</th>
+        <th class="shower">
+          Shower (P.1)
+        </th>
         <td>
-          <small><label for="showerCollected">Collected</label></small> <br />
-          <input type="checkbox" id="showerCollected" v-model="showerCollected" @change="changed()"/>
+          <small><label for="showerCollected">Collected</label></small> <br>
+          <input
+            id="showerCollected"
+            v-model="showerCollected"
+            type="checkbox"
+            @change="changed()"
+          >
         </td>
         <td>
-          <small><label for="showerUsed">Used</label></small> <br />
-          <input type="checkbox" id="showerUsed" v-model="showerUsed" @change="changed()"/>
+          <small><label for="showerUsed">Used</label></small> <br>
+          <input
+            id="showerUsed"
+            v-model="showerUsed"
+            type="checkbox"
+            @change="changed()"
+          >
         </td>
       </tr>
       <tr>
-        <th class="caravan">Caravan Trade (P.2)</th>
+        <th class="caravan">
+          Caravan Trade (P.2)
+        </th>
         <td>
-          <small><label for="caravanCollected">Collected</label></small> <br />
-          <input type="checkbox" id="caravanCollected" v-model="caravanCollected" @change="changed()"/>
+          <small><label for="caravanCollected">Collected</label></small> <br>
+          <input
+            id="caravanCollected"
+            v-model="caravanCollected"
+            type="checkbox"
+            @change="changed()"
+          >
         </td>
         <td>
-          <small><label for="caravanUsed">Used</label></small> <br />
-          <input type="checkbox" id="caravanUsed" v-model="caravanUsed" @change="changed()"/>
+          <small><label for="caravanUsed">Used</label></small> <br>
+          <input
+            id="caravanUsed"
+            v-model="caravanUsed"
+            type="checkbox"
+            @change="changed()"
+          >
         </td>
       </tr>
       <tr>
-        <th class="irradiated">Irradiated (P.3)</th>
+        <th class="irradiated">
+          Irradiated (P.3)
+        </th>
         <td>
-          <small><label for="irradiatedCollected">Collected</label></small> <br />
-          <input type="checkbox" id="irradiatedCollected" v-model="irradiatedCollected" @change="changed()"/>
+          <small><label for="irradiatedCollected">Collected</label></small> <br>
+          <input
+            id="irradiatedCollected"
+            v-model="irradiatedCollected"
+            type="checkbox"
+            @change="changed()"
+          >
         </td>
         <td>
-          <small><label for="irradiatedUsed">Used</label></small> <br />
-          <input type="checkbox" id="irradiatedUsed" v-model="irradiatedUsed" @change="changed()"/>
+          <small><label for="irradiatedUsed">Used</label></small> <br>
+          <input
+            id="irradiatedUsed"
+            v-model="irradiatedUsed"
+            type="checkbox"
+            @change="changed()"
+          >
         </td>
       </tr>
     </table>
