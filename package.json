@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "preserve": "yarn install",
     "serve": "vue-cli-service serve",
     "prebuild": "yarn lint",
     "build": "vue-cli-service build",
+    "prelint": "yarn install",
     "lint": "vue-cli-service lint",
     "predeploy": "yarn build",
     "deploy": "./deploy.sh"
