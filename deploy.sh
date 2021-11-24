@@ -13,7 +13,7 @@ if [ -z "$(git status --porcelain)" ]; then
   echo ""
 else
   echo "Branch is not clean"
-  exit -2
+  exit
 fi
 
 if [[ $currentBranch -eq $EXPECTED_BRANCH ]]; then
