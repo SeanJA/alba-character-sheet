@@ -1,3 +1,5 @@
+[![linter](https://github.com/SeanJA/alba-character-sheet/actions/workflows/lint.yml/badge.svg)](https://github.com/SeanJA/alba-character-sheet/actions/workflows/lint.yml)
+
 # alba
 
 A digital version of the pdf that was sent out with the Alba Special Edition eBook version 1.1. Useful if you don't have a printer.
