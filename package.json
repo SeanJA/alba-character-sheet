@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "preserve": "yarn install",
-    "serve": "vue-cli-service serve",
+    "serve": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
     "prebuild": "yarn lint",
-    "build": "vue-cli-service build",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
     "prelint": "yarn install",
     "lint": "vue-cli-service lint",
     "predeploy": "yarn build",
@@ -15,7 +15,7 @@
   "dependencies": {
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
-    "core-js": "^3.6.5",
+    "core-js": "^3.21.1",
     "vue": "^2.6.12"
   },
   "devDependencies": {
